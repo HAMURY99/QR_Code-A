@@ -1,0 +1,117 @@
+.generator{
+  overflow: hidden;
+  height: 250px;
+  transition: height 0.2s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.generator.active{
+  height: 545px;
+}
+
+.generator h1{
+  font-size: 21px;
+}
+
+.generator p{
+  color: #080000;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.generator-form{
+  margin: 20px 0;
+} 
+
+.generator-form input{
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #060000;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.generator-form button{
+  width: 100%;
+  height: 55px;
+  background: #4f0101;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.generator-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 33px;
+  border: 2px dashed #4f0101;
+  pointer-events: none;
+}
+
+.generator-img img{
+  width: 200px;
+  height: 200px;
+}
+
+.generator-btn{
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.generator-btn .btn-link{
+  background: transparent;
+  color: #4f0101;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 10px 10px 10px 0;
+  transition: 0.4s;
+}
+
+.generator-btn .btn-link:hover{
+  padding: 10px;
+  background:#d33087;
+}
+@media only screen and (max-width:900px){
+  .profile-info{
+      width: 95%;
+      
+  }
+  .profile{
+      width: 95%;
+  }
+  .profile img{
+      width:90%;
+  }
+  .expertise{
+      width: 95%;
+      margin-bottom: 10px;
+  }
+  .projects{
+      width: 95%;
+  }
+  .projects img{
+      width: 30%;
+  }
+  .cont img{
+      width: 10px;
+      margin:-5px 10px;
+  }
+  .cont span{
+      margin:3%;
+      font-size: 10px;
+  }
+  .copy{
+      text-align: center;
+      margin-bottom: 30px;
+      color:rgb(145, 10, 10);
+      
+  }
+}

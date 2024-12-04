@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./qryt.png" type="image/x-icon">
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/generator.css">
+  <link rel="stylesheet" href="./css/scanner.css">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <title>QR Code</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Nav -->
+    <nav>
+      <button class="nav-gene active">QR ⬅مولد</button>
+      <button class="nav-scan">ألماسح الضوئي</button>
+    </nav>
+    <!-- Generator -->
+    <div class="generator">
+      <h1>QR  مولد رمز الاستجابة السريع </h1>
+      <p>  أو أدخل نصأ لانشاء رمز الاستجابة السريع  url ألصق عنوان</p>
+
+      <div class="generator-form">
+        <input type="text" placeholder="Url أدخل النص أو عنوان ">
+        <button>توليد رمز الاستجابة السريع</button>
+      </div>
+
+      <div class="generator-img">
+        <img src="./qryt.png" alt="qr-code">
+      </div>
+
+      <div class="generator-btn">
+        <button class="btn-link">Download <i class="fa-solid fa-download"></i></button>
+      </div>
+    </div>
+
+    <!-- Scanner -->
+    <div class="scanner" style="display: none;">
+      <h1>
+        الماسح الضوئي لرمز الاستجابة السريع 
+        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-circle-stop"></i>
+      </h1>
+
+      <form class="scanner-form">
+        <input type="file" accept="image/*" hidden>
+
+        <img src="./qryt.png" alt="qr-code">
+        <video></video>
+
+        <div class="content">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <p>تحميل رمز الاستجابة السريع للمسح الضوئي</p>
+        </div>
+      </form>
+
+      <div class="scanner-details">
+        <textarea disabled>https://wa.me/967770801691</textarea>
+
+        <div class="btn">
+          <button class="close">مسح</button>
+          <button class="copy">نسخ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="./js/main.js"></script>
+  <script src="./js/generator.js"></script>
+  <script src="./js/scanner.js"></script>
+  <script src="./js/instascan.min.js"></script>
+</body>
+</html> 
